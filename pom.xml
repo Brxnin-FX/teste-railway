@@ -71,15 +71,13 @@
                     </goals>
                     <configuration>
                         <encoding>UTF-8</encoding>
-                        <filters>
-                            <filter>src/main/filters/filter.properties</filter>
-                        </filters>
                     </configuration>
                 </execution>
             </executions>
         </plugin>
     </plugins>
 </build>
+
 
 
 </project>
