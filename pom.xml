@@ -56,7 +56,7 @@
         </dependency>
     </dependencies>
 
-    <build>
+<build>
     <plugins>
         <!-- Configuração para o maven-resources-plugin -->
         <plugin>
@@ -80,24 +80,13 @@
             <configuration>
                 <archive>
                     <manifestEntries>
-                        <Main-Class>com.seuprojeto.ClassePrincipal</Main-Class>
-                    </manifestEntries>
-                </archive>
-            </configuration>
-        </plugin>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-jar-plugin</artifactId>
-            <version>3.2.0</version>
-            <configuration>
-                <archive>
-                    <manifestEntries>
-                        <Main-Class>com.example.demo.DemoApplication.java</Main-Class>
+                        <Main-Class>com.example.demo.DemoApplication</Main-Class>
                     </manifestEntries>
                 </archive>
             </configuration>
         </plugin>
     </plugins>
 </build>
+
 
 </project>
