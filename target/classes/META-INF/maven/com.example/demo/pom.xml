@@ -76,7 +76,7 @@
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-jar-plugin</artifactId>
-            <version>3.2.0</version>
+            
             <configuration>
                 <archive>
                     <manifestEntries>
@@ -85,7 +85,18 @@
                 </archive>
             </configuration>
         </plugin>
+        
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <version>3.1.0</version> <!-- ou a versão compatível com seu projeto -->
+            <configuration>
+                <mainClass>com.example.demo.DemoApplication</mainClass>
+            </configuration>
+        </plugin>
     </plugins>
+    
+    
 </build>
 
 
