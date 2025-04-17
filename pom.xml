@@ -57,26 +57,23 @@
 		</dependency>
 	</dependencies>
 
-	<build>
+<build>
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-resources-plugin</artifactId>
+            <artifactId>maven-jar-plugin</artifactId>
             <version>3.1.0</version>
-            <executions>
-                <execution>
-                    <phase>process-resources</phase>
-                    <goals>
-                        <goal>resources</goal>
-                    </goals>
-                    <configuration>
-                        <encoding>UTF-8</encoding>
-                    </configuration>
-                </execution>
-            </executions>
+            <configuration>
+                <archive>
+                    <manifestEntries>
+                        <Main-Class>com.seu.pacote.ClassePrincipal</Main-Class>
+                    </manifestEntries>
+                </archive>
+            </configuration>
         </plugin>
     </plugins>
 </build>
+
 
 
 
